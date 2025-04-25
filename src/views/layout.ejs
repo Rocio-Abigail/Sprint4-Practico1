@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title><%= title || "SuperHeroesApp" %></title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-yellow-300 min-h-screen flex flex-col">
+
+  <%- include('partials/navbar') %>
+
+  <main class="flex-1 container mx-auto px-4 py-6">
+    <%- body %>
+  </main>
+
+  <%- include('partials/footer') %>
+  
+</body>
+</html>
