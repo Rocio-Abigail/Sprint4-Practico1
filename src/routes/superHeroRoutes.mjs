@@ -22,6 +22,10 @@ const router = express.Router();
 
 router.use(methodOverride('_method'));
 
+router.get('/ping', (req, res) => {
+  res.json({ mensaje: 'API funcionando en Render' });
+});
+
 router.get('/', (req, res) => {
   res.render('index', { title: 'Inicio' });
 });
